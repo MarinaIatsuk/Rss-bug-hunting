@@ -12,7 +12,7 @@ let nextId = 1;
 
 
 function addTask() {
-  const text = input.value;
+  const text = input.value.trim();
   if (!text) {
     errorEl.hidden = false;
     return;
@@ -44,7 +44,7 @@ function getVisibleTasks() {
 }
 
 function updateCounter() {
-  counter.textContent = "Активных задач: " + tasks.length;
+  counter.textContent = "Активных задач: " + tasks.filter((t) => !t.done).length;
 }
 
 function render() {
