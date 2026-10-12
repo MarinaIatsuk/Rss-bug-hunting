@@ -34,7 +34,6 @@ body {
 
 .plans {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: stretch;
   gap: 0;
@@ -52,7 +51,7 @@ body {
 }
 
 .plan--featured {
-  border: 2px solid transparent;
+  border: 2px solid transparent #2563eb;
   box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
 }
 
@@ -81,12 +80,12 @@ body {
 }
 
 .features li {
-  padding: 0;
+  padding: 6px 0;
   margin-bottom: 8px;
 }
 
 .features li::before {
-  content: "";
+  content: "✓";
   color: #22c55e;
   font-weight: 700;
   margin-right: 8px;
